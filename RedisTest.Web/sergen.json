@@ -1,14 +1,27 @@
-﻿{
+{
   "RootNamespace": "RedisTest",
-  "EndOfLine": "LF",
   "ServerTypings": {
     "LocalTexts": true
   },
+  "EndOfLine": "LF",
   "Restore": {
     "Exclude": [
       "/**/*"
     ]
   },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "dbo.TestTable",
+          "Identifier": "TestTable",
+          "Module": "Test",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
   "UpgradeInfo": {
     "InitialType": "Community",
     "InitialVersion": "6.5.1.0"
